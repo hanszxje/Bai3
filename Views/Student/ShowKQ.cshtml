@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Kết quả đăng ký";
+}
+
+<h2 style="text-align: center; color: #333; margin-bottom: 30px;">Kết quả đăng ký</h2>
+
+<div style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: #f9f9f9;">
+    <p style="font-size: 16px; color: #333; line-height: 1.6;">
+        Cảm ơn bạn <strong style="color: #e74c3c;">@ViewBag.MSSV</strong> - <strong style="color: #e74c3c;">@ViewBag.HoTen</strong>
+        đã đăng ký chuyên ngành <strong style="color: #2ecc71;">@ViewBag.ChuyenNganh</strong>.
+    </p>
+    <p style="font-size: 16px; color: #333; line-height: 1.6;">
+        Số lượng sinh viên đã đăng ký cùng ngành học với bạn là: <strong style="color: #2ecc71;">@ViewBag.SoLuong</strong>.
+    </p>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="@Url.Action("Index", "Student")" style="display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px;">Quay lại</a>
+    </div>
+</div>
